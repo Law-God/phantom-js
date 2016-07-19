@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script src="../require.js"></script>
+  <script>
+	require(['../phantom/core/util/util-dom'],function(DomUtil){
+		console.log(DomUtil);
+		var input = document.getElementById('input2');
+		DomUtil.inputAutofocus(input);
+		//PhantomObject.DomUtil.inputSelectAll(input);
+	});
+  </script>
+ </head>
+ <body>
+   <input type="text" tableindex=0/>
+   <input id="input2"  tableindex=1 type="text" />
+   <div id='div'></div>
+ </body>
+</html>

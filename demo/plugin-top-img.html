@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script src="../require.js"></script>
+  <script>
+	require(['../phantom/plugin/plugin-top-img'],function(TopImg){
+		TopImg({id:'dynamicShowImg',stopTime : 5000,speed:3});
+	})
+  </script>
+ </head>
+ <body>
+  <div id="dynamicShowImg" style="margin:auto; display:none; width:100%; top:0px; height:0px;  overflow:hidden; text-align:center;background-image:url('img.jpg')">
+ </body>
+</html>

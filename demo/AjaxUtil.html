@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script src="../require.js"></script>
+  <script>
+	/*
+	require.config({
+		path: "phantom-js/",
+		map : {
+			"*" : {
+				css : 'css'
+			}
+		}
+	});
+	*/
+	require(['../phantom/core/phantom-objects'],function(PhantomObject){
+		console.log(PhantomObject);
+		var AjaxUtil = PhantomObject.AjaxUtil;
+		//AjaxUtil.get({url:'http://localhost:8080/index/12',data:{name:'zhangsan'},callback: callback});
+		//AjaxUtil.load({url:'http://localhost:8080/index/12',data:{name:'zhangsan'},callback: callback});
+		//AjaxUtil.getScript({url:'http://localhost:8080/js/test.js',callback: callback});
+		//AjaxUtil.getJSON({url:'http://localhost:8080/index/12',data:{name:'zhangsan'},callback: callback});
+		//AjaxUtil.ajax({url:'http://localhost:8080/index/12',data:{name:'zhangsan'}});
+		AjaxUtil.put({url:'http://localhost:8080/index/12',data:{name:'zhangsan'}});
+	});
+	
+	function callback(response,status,xhr){
+		console.log('调用成功');
+		console.log(response);
+		console.log(status);
+		console.log(xhr);
+	}
+	
+	function sayHello(){
+		console.log('aaaa');
+	}
+  </script>
+ </head>
+ <body style="padding:0">
+	<div id="container"></div>
+ </body>
+</html>
