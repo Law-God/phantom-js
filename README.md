@@ -1,0 +1,2 @@
+# phantom-js
+use requirejs
