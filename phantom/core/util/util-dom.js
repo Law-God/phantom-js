@@ -3,7 +3,7 @@ define(function(require,exports,module){
 	var Common=require('./util-common');
 	var $=require('../lib/jqueryCMD');
 	var Validate=require('./util-validate');
-	var Logger=require('./util-Logger');
+	var Logger=require('./util-logger');
 
 	var DomUtil = 	{
 		//元素的坐标

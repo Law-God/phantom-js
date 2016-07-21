@@ -4,6 +4,7 @@ define(function(require,exports,module){
 	var _Browser=require("./util/util-browser");
 	var _DateUtil=require("./util/util-date");
 	var _DomUtil=require('./util/util-dom');
+	var _MaskLayerUtil=require('./util/util-maskLayer');
 	var _Logger=require("./util/util-logger");
 	var _NumberUtil=require("./util/util-number");
 	var _Path=require("./util/util-path");
@@ -23,6 +24,7 @@ define(function(require,exports,module){
 		StringUtil : _StringUtil,
 		Validate : _Validate,
         MD5 : _MD5,
-		AjaxUtil : _AjaxUtil
+		AjaxUtil : _AjaxUtil,
+		MaskLayerUtil:_MaskLayerUtil
 	}
 });
